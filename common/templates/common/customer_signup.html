@@ -1,0 +1,41 @@
+{% extends 'common\master.html' %}
+{% block content %}
+
+<body>
+    <table align="center" border="1px" width="60%" height="50%" style="color:aqua"><form action="">
+        <tr>
+            <td colspan="2" align="center">
+            <h1>FROM</h1>
+        </td>
+        </tr>
+        <tr>
+            <td width="30%"> <label for="">  name:</label></td>
+            <td width="80%"><input type="text" placeholder="enter your name" size="15" maxlenght="15"> </td>
+                       
+        </tr>
+        <tr>
+            <td width="30%"> <label for=""> email id:</label></td>
+            <td width="80%"><input type="email" size="15" maxlenght="15"> </td>
+                       
+        </tr>
+        <tr>
+            <td width="30%"> <label for=""> phone number:</label></td>
+            <td width="80%"><input type="phone" size="15" maxlenght="15"> </td>
+                       
+        </tr>
+       
+        <tr>
+            <td width="30%">
+                <input type="submit">
+    
+        </tr>
+        <tr>
+            <td align="center" colspan="2"> <a href="{% url 'common:customer_login' %}">signin</a></td>
+        </tr>
+    </form>
+    
+    </table>
+    
+    </body>
+
+{% endblock %}

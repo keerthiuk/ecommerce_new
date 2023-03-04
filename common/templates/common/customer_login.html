@@ -1,0 +1,36 @@
+{% extends 'common\master.html' %}
+{% block content %}
+<body>
+   
+    
+    <table align="center" border="1px" width="60%" height="50%" style="color:aqua"><form action="">
+        <tr>
+            <td colspan="2" align="center">
+            <h1>login</h1>
+        </td>
+        </tr>
+        <tr>
+            <td width="30%"> <label for=""> user name:</label></td>
+            <td width="80%"><input type="text" placeholder="enter your name" size="15" maxlenght="15"> </td>
+                       
+        </tr>
+        <tr>
+            <td width="30%"> <label for=""> passward:</label></td>
+            <td width="80%"><input type="password" size="15" maxlenght="15"> </td>
+                       
+        </tr>
+        <tr>
+            <td width="30%">
+                <input type="submit">
+
+        </tr>
+        <tr>
+            <td align="center" colspan="2"> <a href="{% url 'common:customer_signup' %}">already exit account</a></td>
+        </tr>
+    </form>
+
+    </table>
+    </body>
+
+   
+    {% endblock %}
