@@ -19,4 +19,10 @@ def seller_login(request):
      return render(request,'common/sellerlog.html')         
 
 def seller_signup(request):
-     return render(request,'common/sellersig.html')              
+     return render(request,'common/sellersig.html') 
+     
+def conditions_loop(request):
+     return render(request,'common/conditions_loop.html')          
+
+def dom(request):
+     return render(request,'common/dom.html')                  

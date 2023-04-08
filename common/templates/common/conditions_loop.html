@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{% static 'js/conditions.js' %}"></script>
+    <script src="{% static 'js/loop.js' %}"></script>
+    <script src="{% static 'js/events.js' %}"></script>
+</head>
+<body>
+    <h1>conditions & loops</h1>
+
+
+
+
+    <h1>Html events</h1>
+    
+    <!-- <body onload="window.alert('Page successfully loaded');">   -->
+
+    <input type="button" onclick="clickevent()" value="Click Here" />
+    <br /><br />
+
+    <p onmouseover="mouseoverevent()">Keep cursor over me</p>
+    <br /><br />
+
+    <input type="text" id="input1" onfocus="focusevent()" /> <br /><br />
+
+    <input type="text" id="input1" onkeydown="keydownevent()" /> <br /><br />
+
+    <p>
+      Modify the text in the input field, then click outside the field to fire
+      the onchange event.
+    </p>
+
+    Enter some text:
+    <input
+      type="text"
+      name="txt"
+      value="Hello"
+      onchange="onchangeevent(this.value)"
+    />
+
+    <br /><br />
+    <br />
+
+    <p>
+      Event will be fired when the input element lose focus after value update.
+    </p>
+    <input type="text" name="txt" value="" onchange="myFunction(this.value)" />
+    <p id="show"></p>
+
+</body>
+</html>
